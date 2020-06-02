@@ -1,2 +1,2 @@
 # lotto_lottery
-[JS Webgame] Lotto Lottery
+[ES2020] Lotto Lottery
