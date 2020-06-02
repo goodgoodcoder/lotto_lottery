@@ -39,11 +39,16 @@ const makeBall = (number, tag) => {
 };
 
 const resultTag = document.querySelector("#result");
-for (let i = 0; i < 6; i++) {
+// for (let i = 0; i < 6; i++) {
+//   setTimeout(() => {
+//     makeBall(winBalls[i], resultTag);
+//   }, 1000 * (i + 1));
+// }
+winBalls.forEach((number, index) => {
   setTimeout(() => {
-    makeBall(winBalls[i], resultTag);
-  }, 1000 * (i + 1));
-}
+    makeBall(number, resultTag);
+  }, 1000 * (index + 1));
+});
 
 const bonusTag = document.querySelector("#bonus");
 setTimeout(() => {
